@@ -1,8 +1,4 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Outlet
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import harvardArt from "./data/harvardArt";
 import GalleryNavigation from "./components/GalleryNavigation/GalleryNavigation";
 import GalleryView from "./components/GalleryView/GalleryView";
@@ -48,6 +44,7 @@ function Layout() {
 }
 
 function App() {
+  console.log(harvardArt.records);
   return <RouterProvider router={router} />;
 }
 
